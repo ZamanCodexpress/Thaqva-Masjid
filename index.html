@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Thaqva Masjid — A place of peace, prayer, and community in Kozhikode. Find prayer times, community programs, and more."
+    />
+    <title>Thaqva Masjid</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ═══════════════════════════════════════════
+       NAVBAR
+  ═════════════════════════════════════════════ -->
+    <nav id="navbar" class="navbar">
+      <div class="nav-container">
+        <a href="#home" class="nav-logo" aria-label="Thaqva Masjid Home">
+          <span class="logo-icon">☪</span>
+          <span class="logo-text">Thaqva Masjid</span>
+        </a>
+        <button
+          class="nav-hamburger"
+          id="hamburger"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-menu" id="nav-menu" role="menubar">
+          <li role="none">
+            <a
+              href="#home"
+              class="nav-link"
+              role="menuitem"
+              data-i18n="nav-home"
+              >Home</a
+            >
+          </li>
+          <li role="none">
+            <a
+              href="#about"
+              class="nav-link"
+              role="menuitem"
+              data-i18n="nav-about"
+              >About</a
+            >
+          </li>
+          <li role="none">
+            <a
+              href="#countdown"
+              class="nav-link"
+              role="menuitem"
+              data-i18n="nav-countdown"
+              >Live Countdown</a
+            >
+          </li>
+          <li role="none">
+            <a
+              href="#prayer"
+              class="nav-link"
+              role="menuitem"
+              data-i18n="nav-prayer"
+              >Prayer Times</a
+            >
+          </li>
+          <li role="none">
+            <a
+              href="#location"
+              class="nav-link"
+              role="menuitem"
+              data-i18n="nav-location"
+              >Location</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ═══════════════════════════════════════════
+       HERO SECTION
+  ═════════════════════════════════════════════ -->
+    <section id="home" class="hero">
+      <div class="hero-bg-pattern" aria-hidden="true"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="hero-eyebrow" id="hero-eyebrow">
+          بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ
+        </p>
+        <h1 class="hero-title" id="hero-title">Thaqva Masjid</h1>
+        <p
+          class="hero-subtitle"
+          id="hero-subtitle"
+          data-i18n-html="hero-subtitle"
+        >
+          A sanctuary of peace, devotion, and community.<br />
+          Welcome all who seek guidance and tranquility.
+        </p>
+        <a href="#prayer" class="hero-cta" id="hero-cta" data-i18n="hero-cta"
+          >View Prayer Times</a
+        >
+      </div>
+      <div class="hero-scroll-hint" aria-hidden="true">
+        <span></span>
+      </div>
+    </section>
+
+    <!-- SEPARATOR -->
+    <div class="pattern-separator" aria-hidden="true">
+      <div class="pattern-line"></div>
+      <div class="pattern-ornament">❧</div>
+      <div class="pattern-line"></div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════
+       ABOUT SECTION
+  ═════════════════════════════════════════════ -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge" data-i18n="about-badge">Our Story</span>
+          <h2 class="section-title" data-i18n="about-title">
+            About Thaqva Masjid
+          </h2>
+          <p class="section-subtitle" data-i18n="about-subtitle">
+            Thaqva Masjid stands as a beacon of faith and unity in our community
+            — a place where hearts gather in remembrance of Allah, knowledge is
+            cherished, and every soul finds welcome.
+          </p>
+        </div>
+
+        <div class="about-body">
+          <div class="about-text-block">
+            <div class="about-text-item">
+              <h3 data-i18n="about-mission-h">Our Mission</h3>
+              <p data-i18n="about-mission-p">
+                To nurture a thriving Muslim community grounded in authentic
+                Islamic values — through worship, learning, and sincere service
+                to humanity.
+              </p>
+            </div>
+            <div class="about-text-item">
+              <h3 data-i18n="about-community-h">Community Role</h3>
+              <p data-i18n="about-community-p">
+                We serve as the spiritual heart of the neighbourhood, providing
+                religious guidance, educational programs, and a safe space for
+                all to grow in faith and character.
+              </p>
+            </div>
+            <div class="about-text-item">
+              <h3 data-i18n="about-welfare-h">Welfare &amp; Support</h3>
+              <p data-i18n="about-welfare-p">
+                We are committed to uplifting those in need — through Zakat
+                distribution, food drives, and compassionate care for widows,
+                orphans, and struggling families in our community.
+              </p>
+            </div>
+          </div>
+
+          <div class="about-cards">
+            <div class="about-card" data-delay="0">
+              <div class="card-icon">🕌</div>
+              <h4 data-i18n="card-prayers-h">Daily Prayers</h4>
+              <p data-i18n="card-prayers-p">
+                Five daily congregational prayers held in an atmosphere of
+                serenity and devotion.
+              </p>
+            </div>
+            <div class="about-card" data-delay="0.12">
+              <div class="card-icon">📖</div>
+              <h4 data-i18n="card-classes-h">Religious Classes</h4>
+              <p data-i18n="card-classes-p">
+                Qur'an recitation, Tajweed, Islamic studies and Arabic language
+                programs for all ages.
+              </p>
+            </div>
+            <div class="about-card" data-delay="0.24">
+              <div class="card-icon">🤝</div>
+              <h4 data-i18n="card-gatherings-h">Community Gatherings</h4>
+              <p data-i18n="card-gatherings-p">
+                Regular events, Jumu'ah khutbahs, and community iftars
+                strengthening our bonds.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEPARATOR -->
+    <div class="pattern-separator" aria-hidden="true">
+      <div class="pattern-line"></div>
+      <div class="pattern-ornament">❧</div>
+      <div class="pattern-line"></div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════
+       LIVE COUNTDOWN SECTION
+  ═════════════════════════════════════════════ -->
+    <section id="countdown" class="countdown-section">
+      <div class="container">
+        <div class="section-header light">
+          <span class="section-badge" data-i18n="cd-badge">Live</span>
+          <h2 class="section-title" data-i18n="cd-title">
+            Next Prayer Countdown
+          </h2>
+          <p class="section-subtitle" data-i18n="cd-subtitle">
+            Real-time countdown to your next Salah
+          </p>
+        </div>
+
+        <div class="countdown-card" id="countdown-card">
+          <div class="countdown-prayer-name" id="cd-prayer-name">Loading…</div>
+          <div class="countdown-prayer-time" id="cd-prayer-time">--:--</div>
+          <div class="countdown-label" data-i18n="cd-label">Time Remaining</div>
+          <div class="countdown-timer" id="cd-timer">
+            <div class="timer-block">
+              <span class="timer-digit" id="cd-h">00</span
+              ><span class="timer-unit" data-i18n="unit-h">h</span>
+            </div>
+            <div class="timer-sep">:</div>
+            <div class="timer-block">
+              <span class="timer-digit" id="cd-m">00</span
+              ><span class="timer-unit" data-i18n="unit-m">m</span>
+            </div>
+            <div class="timer-sep">:</div>
+            <div class="timer-block">
+              <span class="timer-digit" id="cd-s">00</span
+              ><span class="timer-unit" data-i18n="unit-s">s</span>
+            </div>
+          </div>
+          <div class="countdown-status" id="cd-status">
+            Fetching prayer times…
+          </div>
+        </div>
+
+        <!-- All prayers mini strip -->
+        <div class="prayer-strip" id="prayer-strip"></div>
+      </div>
+    </section>
+
+    <!-- SEPARATOR -->
+    <div class="pattern-separator dark" aria-hidden="true">
+      <div class="pattern-line"></div>
+      <div class="pattern-ornament">❧</div>
+      <div class="pattern-line"></div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════
+       PRAYER TIMES SECTION
+  ═════════════════════════════════════════════ -->
+    <section id="prayer" class="prayer-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge" data-i18n="pt-badge">Schedule</span>
+          <h2 class="section-title" data-i18n="pt-title">Daily Prayer Times</h2>
+          <p class="section-subtitle" id="prayer-date-label">
+            Today's complete Salah schedule
+          </p>
+        </div>
+
+        <div class="prayer-table-wrap">
+          <div class="prayer-loading" id="prayer-loading">
+            <div class="spinner"></div>
+            <span>Loading prayer times…</span>
+          </div>
+          <table
+            class="prayer-table"
+            id="prayer-table"
+            aria-label="Daily prayer times"
+          >
+            <thead>
+              <tr>
+                <th scope="col" data-i18n="th-prayer">Prayer</th>
+                <th scope="col" data-i18n="th-time">Time</th>
+              </tr>
+            </thead>
+            <tbody id="prayer-tbody"></tbody>
+          </table>
+        </div>
+
+        <p class="prayer-source" data-i18n-html="pt-source">
+          Prayer times provided by <strong>azantimes.in</strong> for Kozhikode
+          North Assembly Constituency
+        </p>
+      </div>
+    </section>
+
+    <!-- SEPARATOR -->
+    <div class="pattern-separator" aria-hidden="true">
+      <div class="pattern-line"></div>
+      <div class="pattern-ornament">❧</div>
+      <div class="pattern-line"></div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════
+       LOCATION SECTION
+  ═════════════════════════════════════════════ -->
+    <section id="location" class="location-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge" data-i18n="nav-location">Location</span>
+          <h2 class="section-title" data-i18n="location-title">Our Location</h2>
+        </div>
+
+        <div class="map-wrap">
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3909.645721078048!2d75.6284756!3d11.505459899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba689003dcbd83f%3A0x6c83915bf8421afe!2sTHAQWA%20JUMAH%20MASJID!5e0!3m2!1sen!2sin!4v1771920315901!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═════════════════════════════════════════════ -->
+    <footer class="footer">
+      <div class="footer-pattern" aria-hidden="true"></div>
+      <div class="container footer-content">
+        <div class="footer-logo">
+          <span class="logo-icon">☪</span>
+          <span class="logo-text">Thaqva Masjid</span>
+        </div>
+        <p class="footer-message" data-i18n-html="footer-message">
+          "And establish prayer and give zakah and bow with those who bow [in
+          worship and obedience]."
+          <em>— Quran 2:43</em>
+        </p>
+        <p class="footer-credit">
+          Designed &amp; developed by <strong>Zaman Siraj</strong> as a
+          portfolio project for Thaqva Masjid.
+        </p>
+        <p class="footer-copy">
+          &copy; <span id="footer-year"></span> Thaqva Masjid. All rights
+          reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="translator.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
