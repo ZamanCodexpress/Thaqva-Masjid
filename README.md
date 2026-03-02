@@ -126,10 +126,3 @@ This project is **open-source** and intended for educational and portfolio use.
 ## Author
 
 Designed and developed by **Zaman Siraj** as a portfolio project for Thaqva Masjid.
-
-Built to demonstrate:
-- API integration and real-time data rendering
-- GSAP animation and scroll interaction
-- Multilingual UI with dynamic DOM translation
-- Accessible and responsive frontend design
-- Vanilla JavaScript modular architecture
