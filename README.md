@@ -119,7 +119,7 @@ No build tools, package managers, or server setup required.
 
 ## License
 
-This project is **open-source** and intended for educational and portfolio use.
+This project is **not open-source** actually just uploaded to show my skills.
 
 ---
 
